@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora con Servlet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <form method ="POST" action="ServletCalculadora" onchange=rellenar()>
+            <br><br>
+            <center>
+                Introduzca numero 1: <br>
+                <input type="text" name="Num1"><br>
+                Introduzca numero 2: <br>
+                <input type="text" name="Num2"><br><br>
+                Operacion:<br>
+                <input type="button" value="Suma" id="sum" class="Operacion" onclick="rellenar()"><br>
+                <input type="button" value="Resta" name="-" class="Operacion"><br>
+                <input type="button" value="Multiplicacion" name="*" class="Operacion"><br>
+                <input type="button" value="Division" name="/" class="Operacion"><br>
+                <input type="button" value="Seno" name="sen" class="Operacion"><br>
+                <input type="button" value="Coseno" name="cos" class="Operacion"><br>
+                <input type="button" value="Tangente" name="tan" class="Operacion"><br>
+                <input type="button" value="Logaritmo" name="arcsen" class="Operacion"><br>
+                <input type="button" value="Raiz" name="arcos" class="Operacion"><br><br>
+                <input type="submit" value="Calcular">
+            </center>    
+        </form>
+    </body>
+</html>
